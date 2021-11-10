@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color changing app</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 30px;
+            margin-left: 20px;
+        }
+        #red{
+            background-color: red;
+            border: 2px solid black;
+
+        }
+        #red:active{
+            border: 2px solid black;
+        }
+        #orange{
+            background-color: orange;
+            border: 2px solid black;
+
+        }
+        #orange:active{
+            border: 2px solid black;
+        }
+        #white{
+            background-color: white;
+            border: 2px solid black;
+        }
+        #white:active{
+            border: 2px solid red;
+        }
+        #black{
+            background-color: black;
+        }
+        #black:active{
+            border: 2px solid red;
+        }
+        #plum{
+            background-color: plum;
+            border: 2px solid black;
+
+
+        }
+        #plum:active{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="main">
+        <input id="red" onclick="red()" type="button">
+        <input id="orange" onclick="orange()" type="button">
+        <input id="white" onclick="white()" type="button">
+        <input id="black" onclick="black()" type="button">
+        <input id="plum" onclick="plum()" type="button">
+    </div>
+</body>
+<script>
+    var a=document.getElementById("main").style;
+    var b=document.getElementById("red").style;
+    var c=document.getElementById("plum").style;
+    var d=document.getElementById("orange").style;
+    function red(){
+        a.backgroundColor="red";
+    }
+    function orange(){
+        a.backgroundColor="orange";
+
+    }
+    function white(){
+        a.backgroundColor="white";
+    }
+    function black(){
+        a.backgroundColor="rgba(53,53,53)";
+    }
+    function plum(){
+        a.backgroundColor="plum"
+        
+    }
+
+</script>
+</html>
